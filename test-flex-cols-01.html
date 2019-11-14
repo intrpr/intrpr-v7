@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<style>
+		.col { flex-basis: 100%; }
+		@media screen and (min-width: 800px)
+			{
+				.row { display: flex; flex-direction: row; flex-wrap: nowrap;}
+				.col { flex: 1; }
+				._25 { flex: 2.5; }
+				._5 { flex: 5; }
+				._75 { flex: 7.5; }
+			}
+
+		body { font-family: sans-serif; font-size: 1.3rem; background: #eee; marqqgin: 2em; }
+		.col { padding: 1em; margin: 0 0 1em 0; background: rgba(255,0,0,.2); overflow-y: hidden;}
+		main, .col { padqqding: 1em; marqqgin: 0 0 1em 0; borqqder: 1px solid rgba(255,0,0,1); overflow-y: hidden;}
+		main { max-width: 1510px; margin: 0 auto;}
+		secqqtion { display: flex; flex-direction: row; flex-wrap: wrap; }
+		.hide { display: none; visibility: hidden;}
+
+		article, aside { flex-basis: 100%;}
+		@media screen and (max-width: 800px) 
+			{
+			body { marqqgin: 5%; }
+			aside { background: rgba(0,255,0,.2); flex: 2.5; }
+			article { background: rgba(0,0,255,.2); flex: 7.5; }
+			}
+	</style>
+</head>
+
+<body>
+
+
+	<main class="hqqide">
+		<div class="row">
+			<article><h1>Article</h1></article>
+			<aside><h2>Aside</h2></aside>
+		</div>
+	</main>
+	
+	<main>
+		<div class="row">
+			<div class="col _25">25%</div>
+			<div class="col _5">50%</div>
+			<div class="col _25">25%</div>
+		</div>
+	</main>
+
+	<main>
+		<div class="row">
+			<div class="col">100%</div>
+		</div>
+		<div class="row">
+			<div class="col">50%</div>
+			<div class="col">50%</div>
+		</div>
+		<div class="row">
+			<div class="col">33.3%</div>
+			<div class="col">33.3%</div>
+			<div class="col">33.3%</div>
+		</div>
+		<div class="row">
+			<div class="col">25%</div>
+			<div class="col">25%</div>
+			<div class="col">25%</div>
+			<div class="col">25%</div>
+		</div>
+		<div class="row">
+			<div class="col">20%</div>
+			<div class="col">20%</div>
+			<div class="col">20%</div>
+			<div class="col">20%</div>
+			<div class="col">20%</div>
+		</div>
+		<div class="row">
+			<div class="col">16.6%</div>
+			<div class="col">16.6%</div>
+			<div class="col">16.6%</div>
+			<div class="col">16.6%</div>
+			<div class="col">16.6%</div>
+			<div class="col">16.6%</div>
+		</div>
+		<div class="row">
+			<div class="col">14.2%</div>
+			<div class="col">14.2%</div>
+			<div class="col">14.2%</div>
+			<div class="col">14.2%</div>
+			<div class="col">14.2%</div>
+			<div class="col">14.2%</div>
+			<div class="col">14.2%</div>
+		</div>
+		<div class="row">
+			<div class="col">12.5%</div>
+			<div class="col">12.5%</div>
+			<div class="col">12.5%</div>
+			<div class="col">12.5%</div>
+			<div class="col">12.5%</div>
+			<div class="col">12.5%</div>
+			<div class="col">12.5%</div>
+			<div class="col">12.5%</div>
+		</div>
+		<div class="row">
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+		</div>
+		<div class="row">
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+		</div>
+		<div class="row">
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+		</div>
+		<div class="row">
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+		</div>
+		<div class="row">
+			<div class="col _25">Twenty-five Percent</div>
+			<div class="col _75">Seventy-five Percent</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<div class="row">
+					<div class="col">Nested </div>
+					<div class="col">Nested </div>
+				</div>
+			</div>
+			<div class="col">Nothing Nested</div>
+		</div>
+		
+	</main>
+	
+</body>
+</html>
