@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Literata&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap');
+
+				/* Box sizing rules */
+				*,
+		*::before,
+		*::after {
+		box-sizing: border-box;
+		}
+
+		/* Remove default padding */
+		ul[class],
+		ol[class] {
+		padding: 0;
+		}
+
+		/* Remove default margin */
+		body,
+		h1,
+		h2,
+		h3,
+		h4,
+		p,
+		ul[class],
+		ol[class],
+		li,
+		figure,
+		figcaption,
+		blockquote,
+		dl,
+		dd {
+		margin: 0;
+		}
+
+		/* Set core body defaults */
+		body {
+		min-height: 100vh;
+		scroll-behavior: smooth;
+		text-rendering: optimizeSpeed;
+		line-height: 1.6;
+		}
+
+		/* Remove list styles on ul, ol elements with a class attribute */
+		ul[class],
+		ol[class] {
+		list-style: none;
+		}
+		ul { margin:0; padding: 0; }
+		li { margin: 0 0 .25em 0; }
+		
+		/* A elements that don't have a class get default styles */
+		a:not([class]) {
+		text-decoration-skip-ink: auto;
+		}
+
+		/* Make images easier to work with */
+		img {
+		max-width: 100%;
+		display: block;
+		}
+
+		/* Natural flow and rhythm in articles by default */
+		article > * + * {
+		margin-top: 1em;
+		}
+
+		/* Inherit fonts for inputs and buttons */
+		input,
+		button,
+		textarea,
+		select {
+		font: inherit;
+		}
+
+		/* Remove all animations and transitions for people that prefer not to see them */
+		@media (prefers-reduced-motion: reduce) {
+		* {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.01ms !important;
+			scroll-behavior: auto !important;
+		}
+		}
+
+		.col { flex-basis: 100%; }
+		@media screen and (min-width: 800px)
+			{
+				.row { display: flex; flex-direction: row; flex-wrap: nowrap;}
+				.col { flex: 1; }
+				._25 { flex: 2.5; }
+				._5 { flex: 5; }
+				._75 { flex: 7.5; }
+			}
+
+		body { font-family: 'Libre Franklin', serif; font-size: 1.3rem; letter-spacing: .02rem; background: #eee; marqqgin: 2em; }
+		.col { padqqding: 0 1em; marqqgin: 0 0 1em 0; backqqground: rgba(255,0,0,.2); overflow-y: hidden;}
+		main, .col, header, nav, article, section, figure, aside, footer { padqqding: 1em; marqqgin: 0 0 1em 0; borqqder: 1px solid rgba(255,0,0,1); overflow-y: hidden;}
+		main, heqqader, fooqqter { max-width: 1510px; margin: 0 auto;}
+		main { margin: 0 auto; padding: 0 2em; }
+		header { background: rgba(99,0,129,.7); }
+		secqqtion { display: flex; flex-direction: row; flex-wrap: wrap; }
+		.hide { display: none; visibility: hidden;}
+		figure, img { width: 100%; margin: 0 0 1em 0; }
+		aside { padding: 1.5em; margin: 0 0 0 2em; background: rgba(255,255,255,1);}
+
+		article, aside { flex-basis: 100%;}
+		@media screen and (max-width: 800px) 
+			{
+			body { marqqgin: 5%; }
+			aside { backqqground: rgba(0,255,0,.2); flex: 2.5; margin: 2em 0 0 0; }
+			article { backqqground: rgba(0,0,255,.2); flex: 7.5; marqqgin: 0 0 2em 0; }
+			}
+
+	</style>
+</head>
+
+<body>
+
+	<section style="margin: 0 auto; padding: 1em 2em; background: rgba(255,255,255,1);">
+		<div class="row">
+			<div class="col _25">
+				header
+			</div>
+			<div class="col _75">
+				<nav>
+					<ul style="display: inline-flex; list-style: none;">
+						<li>Library</li>
+						<li>Social</li>
+						<li>Action Plans</li>
+						<li>Classrooms</li>
+						<li>Courses</li>
+						<li>Search</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</section>
+	
+	<header style="margin: 0 auto 2em auto; padding: 2em; color: rgba(255,255,255,1);">
+		<main>
+		<ul style="display: inline-flex; list-style: none;">
+			<li><a href="#">Home</a></li> > 
+			<li><a href="#">Section</a></li> > 
+			<li>Breadcrumbs</li>
+		</ul>
+		<div class="row">
+			<div class="col">
+				<h1>title of course</h1>
+				<ul style="display: inline-flex; list-style: none;">
+					<li>(course/catalog number)</li>  
+					<li>Utah Valley University</li>
+				</ul>
+			</div>
+		</div>
+		</main>
+	</header>
+
+	<main>
+		<article>
+			<nav class="row" style="text-align: center;">
+				<div class="col">
+					Syllabus
+				</div>
+				<div class="col">
+					Learning Units
+				</div>
+				<div class="col">
+					Assignments
+				</div>
+				<div class="col">
+					About
+				</div>
+			</nav>
+
+			<div class="row">
+				<div class="col">
+					<figure>
+						<img src="http://www.ntid.rit.edu/sites/default/files/imagecache/newsphoto_big/1290_large.jpg">
+						<figcaption>Source: http://www.ntid.rit.edu/sites/default/files/imagecache/newsphoto_big/1290_large.jpg</figcaption>
+					</figure>
+					<section>
+						<h2>About this Course</h2>
+						<p>This course is an introduction to the process and skills required to produce bidirectional English-bound signing-to-spoken English language transliterations between Deaf and nondeaf people. Upon successful completion of this course, students will demonstrate they can:</p>
+						<ol>
+							<li>incorporate practical applications of non-judgmental language (Colonomos, Witter-Merrithew, et al.) in evaluating personal and colleague work product (professionally talk about our work)</li>
+							<li>from critical reading of published field-related literature, synthesize a definition of transliteration in the signed language interpreting profession (define transliteration)</li>
+							<li>though these readings and class discussion, identify various historical perspectives about the development of transliteration in the signed language interpreting profession (understand transliteration’s genesis, application, and benefit)</li>
+							<li>identify and incorporate a best-practice taxonomy of personal and skill-based competencies and processes required to produce signed-to-spoken language and spoken language-to-signed transliterations, including a review of <a href="#">demand-control schema (DC-S)</a>-based choices in the transliteration process (identify what skills are required)</li>
+							<li>demonstrate and self-monitor abilities required to produce equivalent sign-to-spoken language transliterations of rehearsed and/or spontaneous texts (produce equivalent work):</li>
+						</ol>
+						<p>A significant portion of this course requires self-directed efforts (a/sychronously working with other colleagues) and fairly good command of web-based technologies and learning environments (video creation, salient discussion and reporting skills; we’ll discuss this more in class)</p>		
+					</section>
+				</div>
+
+				<div class="col">
+					<aside>
+						<div style="margin: -1.5em -1.5em 1.5em -1.5em !important; padding: .7em 1.5em; color: rgba(255,255,255,1); background: rgba(99,0,129,1);">header</div>
+						<h3 style="border: 1px solid rgba(0,0,0,.2); border-width: 1px 0 0 0; padding: .5em 0 0 0; margin: 1em 0 0 0;">sub-subhead</h3>
+						<p>Credit: 3:3:1</p>
+						<p>Available for CEUs</p>
+						<p>Classrooms</p>
+						<p>Final Exams</p>
+						<p>Dates/Days</p>
+						<p>Fees</p>
+						<p>text</p>
+						<ol>
+							<li>ordered item</li>
+							<li>ordered item</li>
+						</ol>
+						<h3 style="border: 1px solid rgba(0,0,0,.2); border-width: 1px 0 0 0; padding: .5em 0 0 0; margin: 1em 0 0 0;">sub-subhead</h3>
+						<p>text</p>
+						<h3 style="border: 1px solid rgba(0,0,0,.2); border-width: 1px 0 0 0; padding: .5em 0 0 0; margin: 1em 0 0 0;">sub-subhead</h3>
+						<p>text</p>
+						<ul>
+							<li>unordered item</li>
+							<li>unordered item</li>
+						</ul>
+						<h4 style="margin: 1em 0 0 0;">sub-subhead</h4>
+						<p>text</p>
+						<h4 style="margin: 1em 0 0 0;">sub-subhead</h4>
+						<p>text</p>		
+					</aside>
+				</div>
+			</div>
+		</article>
+	</main>
+
+	<section style="margin: 2em auto 0 auto; padding: 2em; background: rgba(255,255,255,1);">
+		<div class="row">
+			<div class="col _25">
+				<h4>related subhead</h4>
+				<p>text</p>
+			</div>
+			<div class="col _75">
+				<nav class="row">
+					<div class="col">
+						<img style="background: url(http://thephilanews.s3.amazonaws.com/wp-content/uploads/2012/12/Gallaudet-University-Widening-Horizons-for-the-Deaf.jpg) 50% 30%; height: 130px; width: 85%;">
+						<p>description</p>
+					</div>
+					<div class="col">
+						<img style="background: url(https://www.tulsacc.edu/sites/default/files/styles/program_header/public/program/header-image/asl_program_5.jpg) 50% 20%; height: 130px; width: 85%;">
+						<p>description</p>
+					</div>
+					<div class="col">
+						<img style="background: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Interp.jpg/640px-Interp.jpg) 50% 50%; height: 130px; width: 85%;">
+						<p>description</p>
+					</div>
+					<div class="col">
+						<img style="background: url(http://c1.staticflickr.com/8/7599/16835096096_93130cb5ce_c.jpg) 30% 35%; height: 130px; width: 85%;">
+						<p>description</p>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</section>
+
+	<footer style="margin: 0 auto; padding: 2em; background: rgba(0,0,0,.5);">
+		<div class="row">
+			<div class="col _25">
+				indicia
+			</div>
+			<div class="col _75">
+				<nav class="row">
+					<div class="col">
+						nav
+					</div>
+					<div class="col">
+						nav
+					</div>
+					<div class="col">
+						nav
+					</div>
+					<div class="col">
+						nav
+					</div>
+				</nav>
+			</div>
+		</div>
+	</footer>
+
+	<hr style="margin: 2em 0;">
+
+	<main class="hide">
+		<div class="row">
+			<article><h1>Article</h1></article>
+			<aside><h2>Aside</h2></aside>
+		</div>
+	</main>
+	
+	<main>
+		<div class="row">
+			<div class="col _25">25%</div>
+			<div class="col _5">50%</div>
+			<div class="col _25">25%</div>
+		</div>
+	</main>
+
+	<main>
+		<div class="row">
+			<div class="col">100%</div>
+		</div>
+		<div class="row">
+			<div class="col">50%</div>
+			<div class="col">50%</div>
+		</div>
+		<div class="row">
+			<div class="col">33.3%</div>
+			<div class="col">33.3%</div>
+			<div class="col">33.3%</div>
+		</div>
+		<div class="row">
+			<div class="col">25%</div>
+			<div class="col">25%</div>
+			<div class="col">25%</div>
+			<div class="col">25%</div>
+		</div>
+		<div class="row">
+			<div class="col">20%</div>
+			<div class="col">20%</div>
+			<div class="col">20%</div>
+			<div class="col">20%</div>
+			<div class="col">20%</div>
+		</div>
+		<div class="row">
+			<div class="col">16.6%</div>
+			<div class="col">16.6%</div>
+			<div class="col">16.6%</div>
+			<div class="col">16.6%</div>
+			<div class="col">16.6%</div>
+			<div class="col">16.6%</div>
+		</div>
+		<div class="row">
+			<div class="col">14.2%</div>
+			<div class="col">14.2%</div>
+			<div class="col">14.2%</div>
+			<div class="col">14.2%</div>
+			<div class="col">14.2%</div>
+			<div class="col">14.2%</div>
+			<div class="col">14.2%</div>
+		</div>
+		<div class="row">
+			<div class="col">12.5%</div>
+			<div class="col">12.5%</div>
+			<div class="col">12.5%</div>
+			<div class="col">12.5%</div>
+			<div class="col">12.5%</div>
+			<div class="col">12.5%</div>
+			<div class="col">12.5%</div>
+			<div class="col">12.5%</div>
+		</div>
+		<div class="row">
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+			<div class="col">11.1%</div>
+		</div>
+		<div class="row">
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+			<div class="col">10%</div>
+		</div>
+		<div class="row">
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+			<div class="col">9.09%</div>
+		</div>
+		<div class="row">
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+			<div class="col">8.33%</div>
+		</div>
+		<div class="row">
+			<div class="col _25">Twenty-five Percent</div>
+			<div class="col _75">Seventy-five Percent</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<div class="row">
+					<div class="col">Nested </div>
+					<div class="col">Nested </div>
+				</div>
+			</div>
+			<div class="col">Nothing Nested</div>
+		</div>
+		
+	</main>
+	
+</body>
+</html>
