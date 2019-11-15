@@ -102,7 +102,8 @@ header { background: rgba(99,0,129,.7); }
 secqqtion { display: flex; flex-direction: row; flex-wrap: wrap; }
 .hide { display: none; visibility: hidden;}
 figure, img { width: 100%; margin: 0 0 1em 0; }
-aside { padding: 1.5em; margin: 0 0 0 2em; background: rgba(255,255,255,.5);}
+aside { padding: 1.5em; margin: 0 2em 0 0; background: rgba(255,255,255,.5);}
+.card { padding: 1em; margin: 0 1em 1em 0; border: 1px solid rgba(0,0,0,.1); border-radius: .5em;}
 
 article, aside { flex-basis: 100%;}
 @media screen and (max-width: 800px) 
