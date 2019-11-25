@@ -97,7 +97,7 @@ font: inherit;
     ._75 { flex: 7.5; }
     }
 
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Libre Franklin'; font-size: 1.3rem; letqqter-spacing: .012rem; font-weight: 400; color: rgba(0,0,0,.8); background: #eee; marqqgin: 2em; overflow-wrap: break-word; word-wrap: break-word;}
+body { font-family: Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Libre Franklin'; font-size: 1.3rem; letqqter-spacing: .012rem; font-weight: 400; color: rgba(0,0,0,.8); background: #eee; marqqgin: 2em; overflow-wrap: break-word; word-wrap: break-word;}
 .col { padqqding: 0 1em; marqqgin: 0 0 1em 0; backqqground: rgba(255,0,0,.2); }
 main, .col, header, nav, article, section, figure, aside, footer { padqqding: 1em; marqqgin: 0 0 1em 0; borqqder: 1px solid rgba(255,0,0,1); overflow-y: hidden;}
 main, heqqader, fooqqter { max-width: 1366px; margin: 0 auto;}
