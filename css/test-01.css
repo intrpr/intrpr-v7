@@ -1,11 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Literata:400,400i,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700&display=swap');
+
+/* Change color modes derived from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
+
+:root {
+	--primary-color: rgba(38,50,56,1);
+    --button-color: rgba(255,193,7,1);
+    --interface-color: rgba(255,255,255,.5);
+    --font-color: rgba(38,50,56,1);
+    --light-color: rgba(38,50,56,.5);
+    --formbg-color: rgba(255,255,255,.9);
+	--input-color: rgba(38,50,56,.25);
+	--bg-color: rgba(38,50,56,1);
+	--hover-color: rgba(255,255,255,1);
+	--footer-color: rgba(255,255,255,.25);
+}
+
+[data-theme="accessibility"] {
+	--primary-color: rgba(0,0,0,1);
+    --button-color: rgba(255,255,0,1);
+    --interface-color: rgba(255,255,255,.8);
+	--font-color: rgba(0,0,0,1);
+    --light-color: rgba(0,0,0,.6);
+    --formbg-color: rgba(255,255,255,1);
+	--input-color: rgba(0,0,0,.5);
+	--bg-color: rgba(0,0,0,1);
+	--hover-color: rgba(255,255,255,1);
+	--footer-color: rgba(255,255,255,.8);
+}
+
+html {
+    font-size-adjust: 100%;
+    box-sizing: border-box;
+}
 
 /* Box sizing rules */
-        *,
+*,
 *::before,
 *::after {
 box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font: 16px/1 sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoqqothing: antialiased
 }
 
 /* Remove default padding */
@@ -96,7 +136,7 @@ font: inherit;
     ._75 { flex: 7.5; }
     }
 
-body { font-family: "Source Serif Pro", Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.3rem; letter-spacing: -.005rem; fontqq-weight: 400; color: rgba(0,0,0,.8); background: #eee; marqqgin: 2em; overflow-wrap: break-word; word-wrap: break-word;}
+body { font-family: "IBM Plex Serif", Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.3rem; letter-spacing: -.005rem; fontqq-weight: 400; color: rgba(0,0,0,.8); background: #eee; marqqgin: 2em; overflow-wrap: break-word; word-wrap: break-word;}
 .col { padqqding: 0 1em; marqqgin: 0 0 1em 0; backqqground: rgba(255,0,0,.2); }
 main, .col, header, nav, article, section, figure, aside, footer { padqqding: 1em; marqqgin: 0 0 1em 0; borqqder: 1px solid rgba(255,0,0,1); overflow-y: hidden;}
 main, heqqader, fooqqter { max-width: 1366px; margin: 0 auto;}
