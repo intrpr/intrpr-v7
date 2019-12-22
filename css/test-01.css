@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Literata:400,400i,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
 
 /* Change color modes derived from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 
@@ -28,6 +29,16 @@
 	--hover-color: rgba(255,255,255,1);
 	--footer-color: rgba(255,255,255,.8);
 }
+
+html
+body
+nav
+header
+main
+article
+section
+aside
+footer
 
 html {
     font-size-adjust: 100%;
@@ -123,34 +134,69 @@ font: inherit;
 }
 
 .col { flex-basis: 100%; }
-@media screen and (min-width: 800px)
+@media screen and ( min-width: 800px )
     {
     .row { display: flex; flex-direction: row; flex-wrap: nowrap;}
     .col { flex: 1; }
     ._25 { flex: 2.5; }
     ._33 { flex: 3.3;}
-    ._40 { flex: 4; }
-    ._50 { flex: 5; }
+    ._40 { flex: 4.0; }
+    ._50 { flex: 5.0; }
     ._60 { flex: 6.0; }
     ._66 { flex: 6.6; }
+    ._70 { flex: 7.0; }
     ._75 { flex: 7.5; }
     }
 
-body { font-family: "IBM Plex Serif", Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.3rem; letter-spacing: -.005rem; fontqq-weight: 400; color: rgba(0,0,0,.8); background: #eee; marqqgin: 2em; overflow-wrap: break-word; word-wrap: break-word;}
+* {borqqder: 1px solid red;}
+
+body { 
+    font-family: "IBM Plex Serif", Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+    font-size: 1.25rem; 
+    color: var(--primary-color); 
+    background: #eee; 
+    marqqgin: 2em; 
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+}
+
+
+
+
+.meta { }
+nav { }
+nav ul { }
+
 .col { padqqding: 0 1em; marqqgin: 0 0 1em 0; backqqground: rgba(255,0,0,.2); }
+
 main, .col, header, nav, article, section, figure, aside, footer { padqqding: 1em; marqqgin: 0 0 1em 0; borqqder: 1px solid rgba(255,0,0,1); overflow-y: hidden;}
+
 main, heqqader, fooqqter { max-width: 1366px; margin: 0 auto;}
-main { margin: 0 auto; padding: 0 3em; }
-header { background: rgba(99,0,129,.7); }
+
+main { margin: 0 auto; padding: 0 7vw; }
+
+header { backgqqround: rgba(99,0,129,.7); }
+
 secqqtion { display: flex; flex-direction: row; flex-wrap: wrap; }
+
 .hide { display: none; visibility: hidden;}
+
 figure, img { width: 100%; margin: 0 0 1em 0; }
+figcaption { color: rgba(0,0,0,.5); font-size: .9rem; }
+
 aside { padding: 1.5em; margin: 0 0 0 2em; background: rgba(255,255,255,.8); font-size: 1.2rem; }
-figcaption { color: rgba(0,0,0,.5); font-size: .7rem; }
+aside p { margin: 0 0 .5em 0; padding: 0 0 .5em 0; border: 1px solid rgba(0,0,0,.2); border-width: 0 0 1px 0;}
+aside:last-child { padding-bottom: 0; }
+aside p:last-child { border: 0; }
+
+
 .card { padding: 1em; margin: 0 1em 1em 0; border: 1px solid rgba(0,0,0,.1); border-radius: .5em;}
-h1 { font-weight: 400; font-size: 2.5em; letter-spacing: -0.05vw;}
-h2 { font-weight: 700;}
+
+h1 { }
+h2 { }
+h3 { }
 p { margin: 0 0 1em 0; }
+.note { font-size: 1rem; margin: 0 0 1em 0; padding: 0 0 1em 0; border: none; color: rgba(0,0,0,.6); }
 
 article, aside { flex-basis: 100%;}
 @media screen and (max-width: 800px) 

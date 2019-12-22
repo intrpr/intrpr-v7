@@ -8,67 +8,93 @@
 
 <body>
 
-	<section class="meta" style="margin: 0 auto; padding: 1em 2em; background: rgba(255,255,255,1);">
+	<style>
+		.meta {margin: 0 auto; padding: 1em 2em; background: rgba(255,255,255,1);}
+		.meta a {text-decoration: none;}
+		.nav-meta {display: flex; justify-content: flex-end; align-items: flex-start;}
+			sup { font-size: .75rem; margin: 0; padding: 0; vertical-align: super; }
+		nav ul { margin: 0; padding: 0; display: inline-flex; list-style: none; }
+		nav li { margin: 0 0 0 1em; }
+	</style>
+	
+	<nav class="meta">
 		<div class="row">
 			<div class="col _25">
-				header
+				<a href="#">intrpr.info</a>
 			</div>
-			<div class="col _75">
-				<nav>
-					<ul style="display: inline-flex; list-style: none;">
-						<li>Library</li>
-						<li>Social</li>
-						<li>Action Plans</li>
-						<li>Classrooms</li>
-						<li>Courses</li>
-						<li>Search</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</section>
-	
-	<header class="course" style="margin: 0 auto 2em auto; padding: 2em; color: rgba(255,255,255,1);">
-		<main>
-		<ul style="display: inline-flex; list-style: none;">
-			<li><a href="#">Home</a></li> > 
-			<li><a href="#">Section</a></li> > 
-			<li>Breadcrumbs</li>
-		</ul>
-		<div class="row">
-			<div class="col">
-				<h1>title of course</h1>
-				<ul style="display: inline-flex; list-style: none;">
-					<li>(course/catalog number)</li>  
-					<li>Utah Valley University</li>
+			<div class="col _75 nav-meta">
+				<ul>
+					<li><a href="#">Library<sup>Beta</sup></a></li>
+					<li><a href="#">Social</a></li>
+					<li><a href="#">Action Plans<sup>Beta</sup></a></li>
+					<li><a href="#">Classrooms<sup>Beta</sup></a></li>
+					<li><a href="#">Courses<sup>Beta</sup></a></li>
+					<li><a href="#">Search<sup>Beta</sup></a></li>
 				</ul>
 			</div>
 		</div>
+	</nav>
+	
+	<style>
+		.course { margin: 0 auto 2em auto; padding: 2em 0; color: rgba(255,255,255,1); background-color: darkorchid;}
+		.course ul { display: inline-flex; margin: 0; padding: 0; list-style: none; }
+	</style>
+	
+	<header class="course">
+		<main>
+			<ul>
+				<li><a href="#">Home</a></li> > 
+				<li><a href="#">Section</a></li> > 
+				<li>Breadcrumbs</li>
+			</ul>
+			<div class="row">
+				<div class="col">
+					<h1><a href="">Title of Course</a></h1>
+					<ul>
+						<li>(course/catalog number)</li>  
+						<li>Utah Valley University</li>
+					</ul>
+				</div>
+			</div>
 		</main>
 	</header>
 
+	<style>
+		article nav { margin: 0 0 1.5em 0; }
+		article nav ul { display: flex; text-align: center; justqqify-content: space-around; }
+		article nav li { flex-grow: 1; color: rgba(0,0,0,1); padding: .75em; margin: 0; border-radius: .3em .3em 0 0; border: 1px solid rgba(0,0,0,.15); border-width: 0 0 1px 0; }
+		article nav li:hover { background: rgba(99,0,129,.05); }
+		article nav a { text-decoration: none; margin: 0; color: rgba(0,0,0,.5); }
+		article nav .active { color: rgba(255,255,255,1); background: rgba(99,0,129,1); border: 1px solid rgba(0,0,0,.15); border-width: 1px 1px 0 1px; }
+	</style>
+	
 	<main>
 		<article>
+			<nav>
+				<ul>
+					<li class="active"><a href="">Syllabus</a></li>
+					<li class=""><a href="">Learning Units</a></li>
+					<li class=""><a href="">Assignments</a></li>
+					<li class=""><a href="">About</a></li>
+				</ul>
+			</nav>
+
 			<nav class="row" style="text-align: center;">
-				<div class="col">
-					Syllabus
-				</div>
-				<div class="col">
-					Learning Units
-				</div>
-				<div class="col">
-					Assignments
-				</div>
-				<div class="col">
-					About
-				</div>
+				<div class="col _50 active"><a href="">Syllabus</a></div>
+				<div class="col _50"><a href="">Learning Units</a></div>
+				<div class="col _50"><a href="">Assignments</a></div>
+				<div class="col _50"><a href="">About</a></div>
 			</nav>
 
 			<div class="row">
 
 				<div class="col _66">
+					<figure>
+						<img class="img-course" src="http://www.ntid.rit.edu/sites/default/files/imagecache/newsphoto_big/1290_large.jpg">
+						<figcaption>Source: http://www.ntid.rit.edu/sites/default/files/imagecache/newsphoto_big/1290_large.jpg</figcaption>
+					</figure>
 					<section>
-						<h2>About this Course</h2>
+						<h2>Course Description</h2>
 						<p>This course is an introduction to the process and skills required to produce bidirectional English-bound signing-to-spoken English language transliterations between Deaf and nondeaf people. Upon successful completion of this course, students will demonstrate they can:</p>
 						<ol>
 							<li><strong>incorporate practical applications</strong> of non-judgmental language (Colonomos, Witter-Merrithew, et al.) in evaluating personal and colleague work product (professionally talk about our work)</li>
@@ -77,37 +103,63 @@
 							<li>identify and incorporate a best-practice taxonomy of personal and skill-based competencies and processes required to produce signed-to-spoken language and spoken language-to-signed transliterations, including a review of <a href="#">demand-control schema (DC-S)</a>-based choices in the transliteration process (identify what skills are required)</li>
 							<li>demonstrate and self-monitor abilities required to produce equivalent sign-to-spoken language transliterations of rehearsed and/or spontaneous texts (produce equivalent work):</li>
 						</ol>
-						<p>A significant portion of this course requires self-directed efforts (a/sychronously working with other colleagues) and fairly good command of web-based technologies and learning environments (video creation, salient discussion and reporting skills; we’ll discuss this more in class)</p>		
+						<p>A significant portion of this course requires self-directed efforts (a/sychronously working with other colleagues) and fairly good command of web-based technologies and learning environments (video creation, salient discussion and reporting skills; we’ll discuss this more in class)</p>
+						<p class="note">This is a smaller note style.</p>
 					</section>
 				</div>
 
+				<style>
+					aside dl { display: flex; flex-wrap: wrap; }
+					aside dt { flex: 100% 1; }
+					aside dd { flex: 100% 1; margin: 0 0 .75em 0; padding: 0 0 .75em 0; border: 1px solid rgba(0,0,0,.15); border-width: 0 0 1px 0; }
+					aside ul, aside ol { margin: 0; }
+					aside:last-child { padding-bottom: 0; border: 0; }
+					aside .header-aside { margin: -1.5em -1.5em 1.5em -1.5em !important; padding: .7em 1.5em; color: rgba(255,255,255,1); background: rgba(99,0,129,1); display: flex; flex-wrap: wrap; flex: 1 100%; }
+				</style>
+
 				<div class="col _33">
 					<aside>
-						<div style="margin: -1.5em -1.5em 1.5em -1.5em !important; padding: .7em 1.5em; color: rgba(255,255,255,1); background: rgba(99,0,129,1);">header</div>
-						<h3>sub-subhead</h3>
-						<p>Credit: 3:3:1</p>
-						<p>Available for CEUs</p>
-						<p>Classrooms</p>
-						<p>Final Exams</p>
-						<p>Dates/Days</p>
-						<p>Fees</p>
-						<p>Acrobat</p>
-						<ol>
-							<li>ordered item</li>
-							<li>ordered item</li>
-						</ol>
-						<h3>sub-subhead</h3>
-						<p>text</p>
-						<h3>sub-subhead</h3>
-						<p>text</p>
-						<ul>
-							<li>unordered item</li>
-							<li>unordered item</li>
-						</ul>
-						<h4>sub-subhead</h4>
-						<p>text</p>
-						<h4>sub-subhead</h4>
-						<p>This course requires a one-hour per week lab criteria; students should expect to spend at least an hour a week on skill-building exercises in a language laboratory setting.</p>		
+						<div class="header-aside">
+							<div class="row">
+								<div class="">
+									header
+								</div>
+								<div class="">
+									subhead
+								</div>
+							</div>
+						</div>
+						<dl>
+							<dt><h3>sub-subhead</h3></dt>
+							<dd>Credit: 3:3:1</dd>
+							<dd>Available for CEUs</dd>
+							<dd>Classrooms</dd>
+							<dt><h3>Final Exams</h3></dt>
+							<dd>April 24, 2019</dd>
+							<dd>Dates/Days</dd>
+							<dd>Fees</dd>
+							<dd>Acrobat
+								<ol>
+									<li>ordered item</li>
+									<li>ordered item</li>
+								</ol>
+							</dd>
+							<dt><h3>sub-subhead</h3></dt>
+							<dd>text</dd>
+							<dt><h3>sub-subhead</h3></dt>
+							<dd>text</dd>
+							<dd>
+								<ul>
+									<li>unordered item</li>
+									<li>unordered item</li>
+								</ul>
+							</dd>
+							<dt><h4>sub-subhead</h4></dt>
+							<dd>text</dd>
+							<dt><h4>Time Commitment</h4></dt>
+							<dd>This course requires a one-hour per week lab criteria; students should expect to spend at least an hour a week on skill-building exercises in a language laboratory setting.</dd>
+							<dd class="note">This is a smaller note style.</dd>
+						</dl>	
 					</aside>
 				</div>
 
@@ -115,7 +167,58 @@
 		</article>
 	</main>
 
-	<section class="related" style="margin: 2em auto 0 auto; padding: 2em; background: rgba(255,255,255,1);">
+	<style>
+		.related { margin: 2em auto 0 auto; padding: 2em; background: rgba(255,255,255,1); }
+		.related .col + .col { margin-left: 2%; }
+		.related a + a { margin-left: 2%; }
+		.related img { height: 9vw; border: none; background-size: 110%; background-position: center; }
+		.related .asl3350 img { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Interp.jpg/640px-Interp.jpg); border-top: 1em solid blue; }
+		.related .asl3360 img { background-image: url(http://c1.staticflickr.com/8/7599/16835096096_93130cb5ce_c.jpg); border-top: 1em solid magenta; }
+		.related .asl3370 img { background-image: url(https://www.tulsacc.edu/sites/default/files/styles/program_header/public/program/header-image/asl_program_5.jpg); border-top: 1em solid green; }
+		.related .asl3380 img { background-image: url(http://thephilanews.s3.amazonaws.com/wp-content/uploads/2012/12/Gallaudet-University-Widening-Horizons-for-the-Deaf.jpg); border-top: 1em solid purple; }
+	</style>
+
+	<section class="related">
+		<div class="row">
+			<div class="col _25">
+				<h4>related subhead</h4>
+				<p>text</p>
+			</div>
+			<div class="col _75">
+				<ul style="display: inline-flex; margin: 0; padding: 0; list-style: none;">
+					<a href="">
+						<li class="asl3380">
+							<img>
+							<h4>Transliteration <small>(ASL3380)</small></h4>
+							<p>This course is an introduction to the process and skills required to produce bidirectional English-bound signing-to-spoken English language transliterations between Deaf and nondeaf people.</p>
+						</li>
+					</a>
+					<a href="">
+						<li class="asl3370">
+							<img>
+							<h4>Sign-to-Spoken English <small>(ASL3370)</small></h4>
+							<p>This course is an introduction to the skills and processes required to produce conceptually accurate and linguistically appropriate spoken-language interpretations of ASL texts.</p>
+						</li>
+					</a>
+					<a href="">
+						<li class="asl3350">
+							<img>
+							<h4>Consecutive Interpreting <small>(ASL3350)</small></h4>
+							<p>This course introduces students to theory, skills, and processes required to produce consecutive interpretations and focuses on developing basic abilities required to interpret rehearsed and/or spontaneous texts.</p>
+						</li>
+					</a>
+					<a href="">
+						<li class="asl3360">
+							<img>
+							<h4>Simultaneous Interpreting <small>(ASL3360)</small></h4>
+							<p>This course is an continuation of the process, skills, and theory required to produce spoken-English to signed and signed-to-spoken English language interpretations between Deaf and nondeaf people.</p>
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+
+
 		<div class="row">
 			<div class="col _25">
 				<h4>related subhead</h4>
@@ -123,21 +226,33 @@
 			</div>
 			<div class="col _75">
 				<nav class="row">
-					<div class="col">
-						<img style="background: url(http://thephilanews.s3.amazonaws.com/wp-content/uploads/2012/12/Gallaudet-University-Widening-Horizons-for-the-Deaf.jpg) 50% 30%; height: 130px; width: 85%;">
-						<p>description</p>
+					<div class="col asl3380">
+						<a href="">
+							<img>
+							<h4>Transliteration <small>(ASL3380)</small></h4>
+							<p>This course is an introduction to the process and skills required to produce bidirectional English-bound signing-to-spoken English language transliterations between Deaf and nondeaf people.</p>
+						</a>
 					</div>
-					<div class="col">
-						<img style="background: url(https://www.tulsacc.edu/sites/default/files/styles/program_header/public/program/header-image/asl_program_5.jpg) 50% 20%; height: 130px; width: 85%;">
-						<p>description</p>
+					<div class="col asl3370">
+						<a href="">
+							<img>
+							<h4>Sign-to-Spoken English <small>(ASL3370)</small></h4>
+							<p>This course is an introduction to the skills and processes required to produce conceptually accurate and linguistically appropriate spoken-language interpretations of ASL texts.</p>
+						</a>
 					</div>
-					<div class="col">
-						<img style="background: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Interp.jpg/640px-Interp.jpg) 50% 50%; height: 130px; width: 85%;">
-						<p>description</p>
+					<div class="col asl3350">
+						<a href="">
+							<img>
+							<h4>Consecutive Interpreting <small>(ASL3350)</small></h4>
+							<p>This course introduces students to theory, skills, and processes required to produce consecutive interpretations and focuses on developing basic abilities required to interpret rehearsed and/or spontaneous texts.</p>
+						</a>
 					</div>
-					<div class="col">
-						<img style="background: url(http://c1.staticflickr.com/8/7599/16835096096_93130cb5ce_c.jpg) 30% 35%; height: 130px; width: 85%;">
-						<p>description</p>
+					<div class="col asl3360">
+						<a href="">
+							<img>
+							<h4>Simultaneous Interpreting <small>(ASL3360)</small></h4>
+							<p>This course is an continuation of the process, skills, and theory required to produce spoken-English to signed and signed-to-spoken English language interpretations between Deaf and nondeaf people.</p>
+						</a>
 					</div>
 				</nav>
 			</div>

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
+
+/* Change color modes derived from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
+
+:root {
+	--course3380-color-100: rgba(255,0,0,1);
+	--course3380-color-010: rgba(255,0,0,.1);
+    --link-color: rgba(0,123,255,1);
+    --interface-color: rgba(255,255,255,.5);
+    --font-color: rgba(38,50,56,1);
+    --light-color: rgba(38,50,56,.5);
+    --formbg-color: rgba(255,255,255,.9);
+	--input-color: rgba(38,50,56,.25);
+	--bg-color: rgba(38,50,56,1);
+	--hover-color: rgba(255,255,255,1);
+	--footer-color: rgba(255,255,255,.25);
+}
+
+[data-theme="accessibility"] {
+	--primary-color: rgba(0,0,0,1);
+    --button-color: rgba(255,255,0,1);
+    --interface-color: rgba(255,255,255,.8);
+	--font-color: rgba(0,0,0,1);
+    --light-color: rgba(0,0,0,.6);
+    --formbg-color: rgba(255,255,255,1);
+	--input-color: rgba(0,0,0,.5);
+	--bg-color: rgba(0,0,0,1);
+	--hover-color: rgba(255,255,255,1);
+	--footer-color: rgba(255,255,255,.8);
+}
+
+html
+body
+nav
+header
+main
+article
+section
+aside
+footer
+
+html {
+    font-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font: 16px/1 sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoqqothing: antialiased
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+margin: 0;
+}
+
+/* Set core body defaults */
+body {
+min-height: 100vh;
+scroll-behavior: smooth;
+text-rendering: optimizeSpeed;
+line-height: 1.6;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+list-style: none;
+}
+uqql { margin:0; padding: 0; }
+li { margin: 0 0 .25em 0; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+max-width: 100%;
+display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+* {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+}
+}
+
+xs
+sm 46rem
+md 62rem
+lg 75rem
+
+* { border: 1px solid red; }
+
+.hide { display: none; visibility: hidden;}
+
+a, a:active, a:visited { color: var(--link-color); }
+a:hover { color: rgba(0,60,126,1); }
+
+body { 
+    font-family: "IBM Plex Serif", Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+    font-size: 1.25rem; 
+    color: var(--font-color); 
+    background: #eee; 
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    overqqflow-y: hidden;
+}
+
+.container { max-width: 1440px; margin: 0 auto; padqqding: 0 7vw; }
+
+.meta {margin: 0 auto; padding: 1em 2em; background: rgba(255,255,255,1);}
+    .meta a { text-decoration: none; }
+    .nav-meta { display: flex; justify-content: flex-end; align-items: flex-start; }
+        sup { font-size: .75rem; margin: 0; padding: 0; vertical-align: super; }
+    nav ul { margin: 0; padding: 0; display: inline-flex; list-style: none; }
+    nav li { margin: 0 0 0 1em; }
+
+header { }
+    .course { margin: 0 auto 2em auto; padding: 2em 0; color: rgba(255,255,255,1); background-color: var(--course3380-color-100); }
+    .course ul { display: inline-flex; margin: 0; padding: 0; list-style: none; }
+
+
+article { } 
+    .nav-wrap { display: flex; margin: 0 0 2em 0; }
+    .nav-item { text-align: center; color: rgba(0,0,0,1); padding: .75em; margin: 0; border-radius: .3em .3em 0 0; border: 1px solid rgba(0,0,0,.15); border-width: 0 0 1px 0; }
+    .nav-item:hover { background: var(--course3380-color-010); }
+    .nav-item a { text-decoration: none; margin: 0; color: rgba(0,0,0,.5); }
+    .nav-item.active { color: rgba(255,255,255,1); background: var(--course3380-color-100); border: 1px solid rgba(0,0,0,.15); border-width: 1px 1px 0 1px; }
+
+    .content-main { }
+
+aside { }
+    aside { padqqding: 2em; margin: 0 0 0 2em; }
+    aside p { margin: 0 0 .5em 0; padding: 0 0 .5em 0; border: 1px solid rgba(0,0,0,.2); border-width: 0 0 1px 0;}
+    aside:last-child { padding-bottom: 0; }
+    aside p:last-child { border: 0; }
+    aside dl { display: flex; flex-wrap: wrap; padding: 1.5em 2em; background: rgba(255,255,255,.8); }
+    aside dt { flex: 100% 1; font-weight: 700; }
+    aside dd { flex: 100% 1; margin: 0 0 .75em 0; padding: 0 0 .75em 0; border: 1px solid rgba(0,0,0,.15); border-width: 0 0 1px 0; }
+    aside ul, aside ol { margin: 0; }
+    aside:last-child { padding-bottom: 0; border: 0; }
+    aside .header-aside { margin: 0; padding: 1em 2em; color: rgba(255,255,255,1); background: var(--course3380-color-100); }
+
+section { }
+    .related { margin: 2em auto 0 auto; padding: 2em 2em 1em 2em; background: rgba(255,255,255,1); }
+    .related .class { padding-right: 2%; }
+    .related .class + .class { padqqding-left: 1em; }
+    .related img { height: 9vw; border: none; background-size: 110%; background-position: center center; }
+    .related .asl3350 img { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Interp.jpg/640px-Interp.jpg); border-top: 1em solid blue; }
+    .related .asl3360 img { background-image: url(http://c1.staticflickr.com/8/7599/16835096096_93130cb5ce_c.jpg); border-top: 1em solid magenta; }
+    .related .asl3370 img { background-image: url(https://www.tulsacc.edu/sites/default/files/styles/program_header/public/program/header-image/asl_program_5.jpg); border-top: 1em solid green; }
+    .related .asl3380 img { background-image: url(http://thephilanews.s3.amazonaws.com/wp-content/uploads/2012/12/Gallaudet-University-Widening-Horizons-for-the-Deaf.jpg); border-top: 1em solid var(--course3380-color); }
+
+footer { margin: 0 auto; padding: 2em; background: rgba(0,0,0,.1); }
+
+
+
+figure img { width: 100%; margin: 0 0 1em 0; }
+figcaption { color: rgba(0,0,0,.5); font-size: .9rem; }
+.icon { height: 1em; display: inline-block; }
+
+
+
+.card { padding: 1em; margin: 0 1em 1em 0; border: 1px solid rgba(0,0,0,.1); border-radius: .5em;}
+
+h1 { }
+h2 { }
+h3 { }
+p { margin: 0 0 1em 0; }
+.note { font-size: 1rem; margin: 0 0 0 0; padding: 0 0 0 0; border-bottom: 0 solid rgba(0,0,0,.1); color: rgba(0,0,0,.6); }
+
+
+@media screen and ( max-width: 46rem )  
+    {
+        .content-main { flex-direction: row-reverse; }
+        .related .class + .class { paddqqing-left: 0; }
+    }
+
+@media screen and ( max-width: 63rem )  
+    {
+        .container { margin: 0 auto; padding: 0 7vw; }
+    }
+
+@media screen and ( max-width: 62rem )  
+    {
+    body {  }
+    aside { margin: 0 0 2em 0; }
+    article { }
+    }

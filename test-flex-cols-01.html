@@ -3,8 +3,9 @@
 <head>
 	<style>
 		.col { flex-basis: 100%; }
-		@media screen and (min-width: 800px)
+		@media only screen and (max-width: 2000px)
 			{
+				.col { background: rgba(255,0,0,.2); } /*red*/
 				.row { display: flex; flex-direction: row; flex-wrap: nowrap;}
 				.col { flex: 1; }
 				._25 { flex: 2.5; }
@@ -13,8 +14,19 @@
 				._75 { flex: 7.5; }
 			}
 
-		body { font-family: sans-serif; font-size: 1.3rem; background: #eee; marqqgin: 2em; }
-		.col { padding: 1em; margin: 0 0 1em 0; background: rgba(255,0,0,.2); overflow-y: hidden;}
+			@media only screen and (max-width: 1000px)
+		{
+			.col { background: rgba(0,0,255,.2); } /*blue*/
+			.row { display: flex; flex-direction: row; flex-wrap: nowrap;}
+			.col { flex: 1; }
+			._25 { flex: 2.5; }
+			._33 { flex: 3.3; }
+			._5 { flex: 5; }
+			._75 { flex: 7.5; }
+		}
+				
+		body { font-family: sans-serif; font-size: 1.3rem; background: #eee; margin: 2em; }
+		.col { padding: 1em; margin: 0 0 1em 0; overflow-y: hidden;}
 		main, .col { padqqding: 1em; marqqgin: 0 0 1em 0; borqqder: 1px solid rgba(255,0,0,1); overflow-y: hidden;}
 		main { max-width: 1510px; margin: 0 auto;}
 		secqqtion { display: flex; flex-direction: row; flex-wrap: wrap; }
