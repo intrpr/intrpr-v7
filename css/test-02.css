@@ -4,8 +4,8 @@
 /* Change color modes derived from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 
 :root {
-	--course3380-color-100: rgba(255,0,0,1);
-	--course3380-color-010: rgba(255,0,0,.1);
+	--course3380-color-100: rgba(195, 119, 224, 1);
+	--course3380-color-010: rgba(195, 119, 224, .1);
     --link-color: rgba(0,123,255,1);
     --interface-color: rgba(255,255,255,.5);
     --font-color: rgba(38,50,56,1);
@@ -146,8 +146,9 @@ a, a:active, a:visited { color: var(--link-color); }
 a:hover { color: rgba(0,60,126,1); }
 
 body { 
-    font-family: "IBM Plex Serif", Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
-    font-size: 1.25rem; 
+    font-family: "Open Sans", "IBM Plex Serif", Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+    font-size: calc( 14px + (26 - 14) * ((100vw - 500px) / 1500));
+    foqqnt-size: 1.3em; 
     color: var(--font-color); 
     background: #eee; 
     overflow-wrap: break-word; 
@@ -160,7 +161,7 @@ body {
 .meta {margin: 0 auto; padding: 1em 2em; background: rgba(255,255,255,1);}
     .meta a { text-decoration: none; }
     .nav-meta { display: flex; justify-content: flex-end; align-items: flex-start; }
-        sup { font-size: .75rem; margin: 0; padding: 0; vertical-align: super; }
+        sup { font-size: .8rem; margin: 0; padding: 0; vertical-align: super; }
     nav ul { margin: 0; padding: 0; display: inline-flex; list-style: none; }
     nav li { margin: 0 0 0 1em; }
 
@@ -192,31 +193,42 @@ aside { }
 
 section { }
     .related { margin: 2em auto 0 auto; padding: 2em 2em 1em 2em; background: rgba(255,255,255,1); }
-    .related .class { padding-right: 2%; }
-    .related .class + .class { padqqding-left: 1em; }
-    .related img { height: 9vw; border: none; background-size: 110%; background-position: center center; }
-    .related .asl3350 img { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Interp.jpg/640px-Interp.jpg); border-top: 1em solid blue; }
-    .related .asl3360 img { background-image: url(http://c1.staticflickr.com/8/7599/16835096096_93130cb5ce_c.jpg); border-top: 1em solid magenta; }
-    .related .asl3370 img { background-image: url(https://www.tulsacc.edu/sites/default/files/styles/program_header/public/program/header-image/asl_program_5.jpg); border-top: 1em solid green; }
-    .related .asl3380 img { background-image: url(http://thephilanews.s3.amazonaws.com/wp-content/uploads/2012/12/Gallaudet-University-Widening-Horizons-for-the-Deaf.jpg); border-top: 1em solid var(--course3380-color); }
+        .related .class { padding-right: 2em; }
+        .related .class + .class { padqqding-left: 1em; }
+        .related img { height: 12vw; border: none; background-size: 110%; background-position: center center; }
+        .related .asl3350 img { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Interp.jpg/640px-Interp.jpg); border-top: 1em solid blue; }
+        .related .asl3360 img { background-image: url(http://c1.staticflickr.com/8/7599/16835096096_93130cb5ce_c.jpg); border-top: 1em solid magenta; }
+        .related .asl3370 img { background-image: url(https://www.tulsacc.edu/sites/default/files/styles/program_header/public/program/header-image/asl_program_5.jpg); border-top: 1em solid green; }
+        .related .asl3380 img { background-image: url(http://thephilanews.s3.amazonaws.com/wp-content/uploads/2012/12/Gallaudet-University-Widening-Horizons-for-the-Deaf.jpg); border-top: 1em solid var(--course3380-color-100); }
 
-footer { margin: 0 auto; padding: 2em; background: rgba(0,0,0,.1); }
+    .well { margin: 2em 0; font-size: 90%; }
+        .inline { background: rgba(255,255,255,.35); padding: 2em; }
+        .outline { background: rgba(255,255,255,.35); padding: 2em; margin: 2em -2em !important; }
+        .columns-one { columns: 1; column-gap: 2em; column-rule: 1px solid rgba(0,0,0,.1); }
+        .columns-two { columns: 2; column-gap: 2em; column-rule: 1px solid rgba(0,0,0,.1); }
+        .columns-three { columns: 3; column-gap: 3em; column-rule: 1px solid rgba(0,0,0,.1); break-inside: avoid; }
+        .well h4 { padding: 1rem 0; border: 1px double rgba(0,0,0,.1); border-width: 4px 0 1px 0; margin: 0 0 1.5em 0; }
+
+footer { margin: 0 auto; padding: 2em 0; background: rgba(0,0,0,.1); }
 
 
 
 figure img { width: 100%; margin: 0 0 1em 0; }
 figcaption { color: rgba(0,0,0,.5); font-size: .9rem; }
 .icon { height: 1em; display: inline-block; }
+.thumbnail-right { float: right; width: 7em; margin: 0 0 1em 1em; }
+.thumbnail-left { float: left; width: 7em; margin: 0 1em 1em 0; }
 
 
 
 .card { padding: 1em; margin: 0 1em 1em 0; border: 1px solid rgba(0,0,0,.1); border-radius: .5em;}
 
-h1 { }
-h2 { }
+
+h1, .h1 { font-size: 185%; line-height: 1.5; margin: 0; }
+h2, .h2 { font-size: 145%; line-height: 1.5; margin: 0; }
 h3 { }
 p { margin: 0 0 1em 0; }
-.note { font-size: 1rem; margin: 0 0 0 0; padding: 0 0 0 0; border-bottom: 0 solid rgba(0,0,0,.1); color: rgba(0,0,0,.6); }
+.note { font-size: 90%; margin: 0 0 0 0; padding: 0 0 0 0; border-bottom: 0 solid rgba(0,0,0,.1); color: rgba(0,0,0,.6); }
 
 
 @media screen and ( max-width: 46rem )  
