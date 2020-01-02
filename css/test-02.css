@@ -119,7 +119,7 @@ body {
 min-height: 100vh;
 scroll-behavior: smooth;
 text-rendering: optimizeSpeed;
-line-height: 1.6;
+line-height: 1.7;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -173,14 +173,14 @@ lg 75rem
 * { border: 1px solid red; }
 
 .hide { display: none; visibility: hidden;}
-
+hr { margin: 2em 0; border: 1px solid rgba(0,0,0,.15); border-width: 0 0 1px 0; }
 a, a:active, a:visited { color: var(--link-color); }
 a:hover { color: rgba(0,60,126,1); }
 
 body { 
     font-family: "Open Sans", "IBM Plex Serif", Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
     font-size: calc( 14px + (26 - 14) * ((100vw - 500px) / 1500));
-    foqqnt-size: 1.3em; 
+    font-size: 1.2rem; 
     color: var(--font-color); 
     background: #eee; 
     overflow-wrap: break-word; 
@@ -233,7 +233,7 @@ section { }
         .related .asl3370 img { background-image: url(https://www.tulsacc.edu/sites/default/files/styles/program_header/public/program/header-image/asl_program_5.jpg); border-top: 1em solid green; }
         .related .asl3380 img { background-image: url(http://thephilanews.s3.amazonaws.com/wp-content/uploads/2012/12/Gallaudet-University-Widening-Horizons-for-the-Deaf.jpg); border-top: 1em solid var(--course3380-color-100); }
 
-    .well { margin: 2em 0; font-size: 90%; break-inside: avoid; }
+    .well { margin: 2em 0; fontqq-size: 90%; break-inside: avoid; }
         .inline { background: rgba(255,255,255,.35); padding: 2em; }
         .outline { background: rgba(255,255,255,.35); padding: 2em; margin: 2em -2em !important; }
         .columns-one { columns: 1; column-gap: 2em; column-rule: 1px solid rgba(0,0,0,.15); }
@@ -292,7 +292,7 @@ table ul { margin: 0; }
 }
 
 
-.alert { padding: 1em 1.25em; margin: 1em 0; border-radius: .25em; border: 1px solid rgba(0,0,0,.1); background: rgba(0,0,0,.1); }
+.alert { padding: 1.75em 1.75em 1.5em 1.75em; margin: 1em 0; border-radius: .25em; border: 1px solid rgba(0,0,0,.1); background: rgba(0,0,0,.1); }
 .alert-danger { background: rgba(255,0,0,.1); border: 1px solid rgba(255,0,0,.2); color: rgb(185,0,0,1); }
 .label { padding: .25em .5em; border-radius: .25em; background: rgb(185,0,0,1); color: rgba(255,255,255,1); }
 .label-danger { }
@@ -303,6 +303,7 @@ table ul { margin: 0; }
     {
         .content-main { flex-direction: row-reverse; }
         .related .class + .class { paddqqing-left: 0; }
+        .columns-one, .columns-two, .columns-three { columns: 1; }
     }
 
 @media screen and ( max-width: 63rem )  
