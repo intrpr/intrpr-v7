@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro:400,400i,600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
 
 /* Change color modes derived from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
@@ -119,7 +119,6 @@ body {
 min-height: 100vh;
 scroll-behavior: smooth;
 text-rendering: optimizeSpeed;
-line-height: 1.7;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -178,17 +177,19 @@ a, a:active, a:visited { color: var(--link-color); }
 a:hover { color: rgba(0,60,126,1); }
 
 body { 
-    font-family: "Open Sans", "IBM Plex Serif", Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+    font-family: "Crimson Pro", "Open Sans", Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
     font-size: calc( 14px + (26 - 14) * ((100vw - 500px) / 1500));
-    font-size: 1.2rem; 
+    font-size: 1.6rem; 
+    line-height: 1.45;
     color: var(--font-color); 
     background: #eee; 
     overflow-wrap: break-word; 
     word-wrap: break-word;
     overqqflow-y: hidden;
+    letter-qqspacing: .01em;
 }
 
-.container { max-width: 1440px; margin: 0 auto; padqqding: 0 7vw; }
+.container { max-width: 1440px; max-width: 33em; margin: 0 auto; padqqding: 0 7vw; }
 
 .meta {margin: 0 auto; padding: 1em 2em; background: rgba(255,255,255,1);}
     .meta a { text-decoration: none; }
@@ -292,9 +293,9 @@ table ul { margin: 0; }
 }
 
 
-.alert { padding: 1.75em 1.75em 1.5em 1.75em; margin: 1em 0; border-radius: .25em; border: 1px solid rgba(0,0,0,.1); background: rgba(0,0,0,.1); }
+.alert { padding: 1.5em 1.5em 1.5em 1.5em; margin: 1em 0; border-radius: .75em; border: 1px solid rgba(0,0,0,.1); background: rgba(0,0,0,.1); }
 .alert-danger { background: rgba(255,0,0,.1); border: 1px solid rgba(255,0,0,.2); color: rgb(185,0,0,1); }
-.label { padding: .25em .5em; border-radius: .25em; background: rgb(185,0,0,1); color: rgba(255,255,255,1); }
+.label { padding: .2em .5em .3em .5em; border-radius: 50em; background: rgb(185,0,0,1); color: rgba(255,255,255,1); }
 .label-danger { }
 
 

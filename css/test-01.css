@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Literata:400,400i,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro:400,400i,600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
 
 /* Change color modes derived from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 
 :root {
-	--primary-color: rgba(38,50,56,1);
-    --button-color: rgba(255,193,7,1);
+	--course3380-color-100: rgba(195, 119, 224, 1);
+	--course3380-color-010: rgba(195, 119, 224, .1);
+    --link-color: rgba(0,123,255,1);
     --interface-color: rgba(255,255,255,.5);
     --font-color: rgba(38,50,56,1);
     --light-color: rgba(38,50,56,.5);
@@ -15,6 +15,37 @@
 	--bg-color: rgba(38,50,56,1);
 	--hover-color: rgba(255,255,255,1);
 	--footer-color: rgba(255,255,255,.25);
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
 [data-theme="accessibility"] {
@@ -88,7 +119,6 @@ body {
 min-height: 100vh;
 scroll-behavior: smooth;
 text-rendering: optimizeSpeed;
-line-height: 1.6;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -151,8 +181,9 @@ font: inherit;
 * {borqqder: 1px solid red;}
 
 body { 
-    font-family: "IBM Plex Serif", Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
-    font-size: 1.25rem; 
+    font-family: "Crimson Pro", Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+    font-size: 1.5rem; 
+    line-height: 1.45;
     color: var(--primary-color); 
     background: #eee; 
     marqqgin: 2em; 
@@ -184,15 +215,28 @@ secqqtion { display: flex; flex-direction: row; flex-wrap: wrap; }
 figure, img { width: 100%; margin: 0 0 1em 0; }
 figcaption { color: rgba(0,0,0,.5); font-size: .9rem; }
 
-aside { padding: 1.5em; margin: 0 0 0 2em; background: rgba(255,255,255,.8); font-size: 1.2rem; }
+aside { padqqding: 1.5em; margin: 0 0 0 2em; background: rgba(255,255,255,.8); fontqq-size: 1.2rem; }
 aside p { margin: 0 0 .5em 0; padding: 0 0 .5em 0; border: 1px solid rgba(0,0,0,.2); border-width: 0 0 1px 0;}
 aside:last-child { padding-bottom: 0; }
 aside p:last-child { border: 0; }
 
 
+aside { }
+    aside { padqqding: 2em; margin: 0 0 0 2em; }
+    aside p { margin: 0 0 .5em 0; padding: 0 0 .5em 0; border: 1px solid rgba(0,0,0,.2); border-width: 0 0 1px 0;}
+    aside:last-child { padding-bottom: 0; }
+    aside p:last-child { border: 0; }
+    aside dl { display: flex; flex-wrap: wrap; padding: 1.5em 2em; background: rgba(255,255,255,.8); }
+    aside dt { flex: 100% 1; font-weight: 700; }
+    aside dd { flex: 100% 1; margin: 0 0 .75em 0; padding: 0 0 .75em 0; border: 1px solid rgba(0,0,0,.15); border-width: 0 0 1px 0; }
+    aside ul, aside ol { margin: 0; }
+    aside:last-child { padding-bottom: 0; border: 0; }
+    aside .header-aside { margin: 0; padding: 1em 2em; color: rgba(255,255,255,1); background: var(--course3380-color-100); }
+
+
 .card { padding: 1em; margin: 0 1em 1em 0; border: 1px solid rgba(0,0,0,.1); border-radius: .5em;}
 
-h1 { }
+h1 { font-weight: 400; }
 h2 { }
 h3 { }
 p { margin: 0 0 1em 0; }
