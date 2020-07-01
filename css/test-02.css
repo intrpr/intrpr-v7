@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Pro:400,400i,600&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap');
 
 /* Change color modes derived from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 
 :root {
-	--course3380-color-100: rgba(195, 119, 224, 1);
+    --course3380-color-100: rgba(195, 119, 224, 1);
 	--course3380-color-010: rgba(195, 119, 224, .1);
     --link-color: rgba(0,123,255,1);
     --interface-color: rgba(255,255,255,.5);
-    --font-color: rgba(38,50,56,1);
+    --font-color: rgba(0,0,0,.75);
     --light-color: rgba(38,50,56,.5);
     --formbg-color: rgba(255,255,255,.9);
 	--input-color: rgba(38,50,56,.25);
-	--bg-color: rgba(38,50,56,1);
+	--bg-color: rgba(0,0,0,.05);
 	--hover-color: rgba(255,255,255,1);
 	--footer-color: rgba(255,255,255,.25);
 }
@@ -44,7 +44,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-sans-serif: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
@@ -177,19 +177,19 @@ a, a:active, a:visited { color: var(--link-color); }
 a:hover { color: rgba(0,60,126,1); }
 
 body { 
-    font-family: "Crimson Pro", "Open Sans", Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+    font-family: "Rubik", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, "sans-serif"; 
     font-size: calc( 14px + (26 - 14) * ((100vw - 500px) / 1500));
-    font-size: 1.6rem; 
-    line-height: 1.45;
+    font-size: 1.325rem; 
+    line-height: 1.55;
     color: var(--font-color); 
-    background: #eee; 
+    background: var(--bg-color); 
     overflow-wrap: break-word; 
     word-wrap: break-word;
     overqqflow-y: hidden;
-    letter-qqspacing: .01em;
+    letter-spacing: .005em;
 }
 
-.container { max-width: 1440px; max-width: 33em; margin: 0 auto; padqqding: 0 7vw; }
+.container { max-width: 1440px; max-width: 48em; margin: 0 auto; padqqding: 0 7vw; }
 
 .meta {margin: 0 auto; padding: 1em 2em; background: rgba(255,255,255,1);}
     .meta a { text-decoration: none; }
@@ -218,7 +218,7 @@ aside { }
     aside:last-child { padding-bottom: 0; }
     aside p:last-child { border: 0; }
     aside dl { display: flex; flex-wrap: wrap; padding: 1.5em 2em; background: rgba(255,255,255,.8); }
-    aside dt { flex: 100% 1; font-weight: 700; }
+    aside dt { flex: 100% 1; font-weight: 600; }
     aside dd { flex: 100% 1; margin: 0 0 .75em 0; padding: 0 0 .75em 0; border: 1px solid rgba(0,0,0,.15); border-width: 0 0 1px 0; }
     aside ul, aside ol { margin: 0; }
     aside:last-child { padding-bottom: 0; border: 0; }
@@ -258,7 +258,7 @@ figcaption { color: rgba(0,0,0,.5); font-size: .9rem; }
 
 
 h1, .h1 { font-size: 185%; line-height: 1.2; margin: 0 0 .5em 0; }
-h2, .h2 { font-size: 145%; line-height: 1.2; margin: 0 0 .5em 0; }
+h2, .h2 { font-size: 145%; line-height: 1.2; margin: 0 0 .5em 0; letter-spacing: -.01em; font-weight: 700; }
 h3, .h3 { font-size: 115%; line-height: 1.3; margin: 0 0 .5em 0; }
     .resources h3 { margin-top: 1em; padding-top: 1em; border-top: 1px solid rgba(0,0,0,.2); }
 
@@ -293,9 +293,9 @@ table ul { margin: 0; }
 }
 
 
-.alert { padding: 1.5em 1.5em 1.5em 1.5em; margin: 1em 0; border-radius: .75em; border: 1px solid rgba(0,0,0,.1); background: rgba(0,0,0,.1); }
-.alert-danger { background: rgba(255,0,0,.1); border: 1px solid rgba(255,0,0,.2); color: rgb(185,0,0,1); }
-.label { padding: .2em .5em .3em .5em; border-radius: 50em; background: rgb(185,0,0,1); color: rgba(255,255,255,1); }
+.alert { padding: 1.2em 1.4em; margin: 1em -1em; border-radius: .75em; border: 1px solid rgba(0,0,0,.1); background: rgba(0,0,0,.1); }
+.alert-danger { background: rgba(255,0,0,.08); border: 1px solid rgba(255,0,0,.12); color: rgba(185,0,0,.8); }
+.label { padding: .2em .6em .3em .6em; border-radius: 100em; background: rgb(185,0,0,.8); color: rgba(255,255,255,1); }
 .label-danger { }
 
 

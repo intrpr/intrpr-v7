@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Pro:400,400i,600&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
 /* Change color modes derived from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 
@@ -8,11 +8,11 @@
 	--course3380-color-010: rgba(195, 119, 224, .1);
     --link-color: rgba(0,123,255,1);
     --interface-color: rgba(255,255,255,.5);
-    --font-color: rgba(38,50,56,1);
+    --font-color: rgba(0,0,0,.75);
     --light-color: rgba(38,50,56,.5);
     --formbg-color: rgba(255,255,255,.9);
 	--input-color: rgba(38,50,56,.25);
-	--bg-color: rgba(38,50,56,1);
+	--bg-color: rgba(0,0,0,.05);
 	--hover-color: rgba(255,255,255,1);
 	--footer-color: rgba(255,255,255,.25);
 }
@@ -44,7 +44,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-sans-serif: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
@@ -181,16 +181,28 @@ font: inherit;
 * {borqqder: 1px solid red;}
 
 body { 
-    font-family: "Crimson Pro", Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
     font-size: 1.5rem; 
     line-height: 1.45;
     color: var(--primary-color); 
-    background: #eee; 
-    marqqgin: 2em; 
+    background: var(--bg-color); 
     overflow-wrap: break-word; 
     word-wrap: break-word;
+    overqqflow-y: hidden;
+    letter-spacing: .005em;
 }
 
+body { 
+    font-family: "Rubik", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, "sans-serif";
+    font-size: calc( 14px + (26 - 14) * ((100vw - 500px) / 1500));
+    font-size: 1.375rem; 
+    line-height: 1.52;
+    color: var(--font-color); 
+    background: var(--bg-color); 
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+    overqqflow-y: hidden;
+    letterqq-spacing: .005em;
+}
 
 
 
@@ -202,7 +214,7 @@ nav ul { }
 
 main, .col, header, nav, article, section, figure, aside, footer { padqqding: 1em; marqqgin: 0 0 1em 0; borqqder: 1px solid rgba(255,0,0,1); overflow-y: hidden;}
 
-main, heqqader, fooqqter { max-width: 1366px; margin: 0 auto;}
+main, heqqader, fooqqter { max-width: 60em; margin: 0 auto;}
 
 main { margin: 0 auto; padding: 0 7vw; }
 
@@ -240,7 +252,7 @@ h1 { font-weight: 400; }
 h2 { }
 h3 { }
 p { margin: 0 0 1em 0; }
-.note { font-size: 1rem; margin: 0 0 1em 0; padding: 0 0 1em 0; border: none; color: rgba(0,0,0,.6); }
+.note { font-size: 1rem; marqqgin: 0 0 1em 0; padqqding: 0 0 1em 0; border: none; color: rgba(0,0,0,.6); }
 
 article, aside { flex-basis: 100%;}
 @media screen and (max-width: 800px) 
