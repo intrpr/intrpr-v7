@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Crimson+Pro:400,400i,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,800;1,300&display=swap');
+
+
+
+
 
 /* Change color modes derived from https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 */
 
@@ -44,7 +47,7 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-sans-serif: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Libre Franklin", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
@@ -188,11 +191,11 @@ body {
     overflow-wrap: break-word; 
     word-wrap: break-word;
     overqqflow-y: hidden;
-    letter-spacing: .005em;
+    letqqter-spacing: .005em;
 }
 
 body { 
-    font-family: "Rubik", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, "sans-serif";
+    font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Inter, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, "sans-serif";
     font-size: calc( 14px + (26 - 14) * ((100vw - 500px) / 1500));
     font-size: 1.375rem; 
     line-height: 1.52;
@@ -201,7 +204,7 @@ body {
     overflow-wrap: break-word; 
     word-wrap: break-word;
     overqqflow-y: hidden;
-    letterqq-spacing: .005em;
+    letter-spacing: .01em;
 }
 
 
